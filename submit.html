@@ -1,0 +1,91 @@
+	<html>
+	<head>
+		<title>Tunes</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/maincss.css">
+
+
+
+		<script src="jquery-3.2.0.js"></script>
+
+	</head>
+	<body>
+		
+
+
+
+		<header>
+
+			<ul>
+				<a href = "index.html"><img src="https://pmcdeadline2.files.wordpress.com/2016/07/logo-tv-logo.png" width=100px style = " filter: invert(1);" class ="img-responsive pull-left"></a>
+				<li><a class="active" href="samples.html">Samples</a></li>
+				<li><a href="submit.html">Submit</a></li>
+				<li><a href="learn.html">Learn</a></li>
+				<li><a href="discover.html">Discover</a></li>
+			</ul>
+			
+
+		</header>
+
+
+
+		<!--<div class = "container">-->
+
+
+		<div class = "trending">
+			<center><h1 style = "padding-top:50px" >Submit</h1></center>
+		</div>
+		<div class = "form">
+
+
+
+
+			<form action="thanks.html" method="get" enctype="text/plain">
+				*Artist:<br>
+				<input type="text" name="name" required><br>
+				*Song's Title<br>
+				<input type="text" name="name" required><br>
+				*E-mail:<br>
+				<input type="text" name="mail" required><br>
+				Links:<br>
+				<input type="text" name="Links" size="50" height="100"><br><br>
+				*Sound file <input type="file" name="wav" required><br>
+				.Flp file<input type="file" name="flp">	
+				<br><br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</form>
+
+
+		</div>
+
+		<!----</div>-->
+
+
+
+		
+		<footer class = "footer">
+
+
+
+
+			<p style = "color:grey;padding-right:25px">&copy 2017</p>
+
+
+		</footer>
+
+
+		<script>
+		function play(){
+			alert(1);
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+
+
+
+		</script>
+
+	</body>
+	</html>				
