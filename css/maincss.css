@@ -37,13 +37,58 @@
     to   { opacity: 1; }
 }
 
-@keyframes movetext{
 
-	from{padding-top:0px;}
+@-moz-keyframes movetext {
+    	from{padding-top:0px;}
 	to{padding-top:100px;}
-	}
 }
 
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes movetext {
+   	from{padding-top:0px;}
+	to{padding-top:100px;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes movetext {
+	from{padding-top:0px;}
+	to{padding-top:100px;}
+}
+
+
+
+
+
+
+/* Opera < 12.1 */
+@-o-keyframes moveheader {
+    	from{padding-top:0px;}
+	to{padding-top:50px;}	
+}
+
+
+@-moz-keyframes moveheader {
+    	from{padding-top:0px;}
+	to{padding-top:50px;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes moveheader{
+   	from{padding-top:0px;}
+	to{padding-top:50px;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes moveheader {
+	from{padding-top:0px;}
+	to{padding-top:50px;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes moveheader {
+    	from{padding-top:0px;}
+	to{padding-top:50px;}	
+}
 
 @keyframes moveheader{
 
@@ -51,6 +96,8 @@
 	to{padding-top:50px;}
 	}
 }
+
+
 
 
 
@@ -114,7 +161,8 @@
 			position:relative;
 			display: inline-block;
 			width:100%;
-			
+			 margin-left: auto;
+    margin-right: auto
 			
 
 		}
@@ -130,12 +178,17 @@
 
 		.playBox{						/*Contains the artwork and play button */
 			position:relative;
-			height:197px;
-			width: 350px;
+			height:253px;
+			width: 450px;
 			
 			margin: 40px;
 			border-radius: 20px;
 
+		}
+		.playbox iframe{
+		
+		width:450px;
+		height:253px;
 		}
 
 		.singleContainer{				/*Contains the download files, Artist, Title, and playBox */
@@ -144,10 +197,11 @@
 			padding-left:40px;
 			margin-top: -25px;
 			line-height: 60%;
+			text-align:left;
 
 		}
 		.singleContainer p{
-
+		
 		}
 
 
@@ -158,19 +212,20 @@
 
 
 		.playButton{
-			
+			position:relative;
 			border-radius: 180px;
 			width:80px;
 			height:80px;
-			margin-top: -130px;
+			margin-top: -150px;
+			bottom:50px;
 		}
 
 		.Submit{
 		
 		margin-top: 100px;
-		padding-bottom: 600px;
+		padding-bottom: 500px;
 			
-			height:500px;
+			height:800px;
 			
 			background-image: url("http://wallpapercave.com/wp/mcNsnlY.jpg");
 
@@ -279,10 +334,11 @@
 	}
 
 	.learncontain{
-
+		position:relative;
 		display: inline-block;
+			 margin-left: auto;
+			  margin-right: auto
 			
-		margin: 0 auto;
 
 	}
 
@@ -292,11 +348,16 @@
 		border-style: solid;
 		border-width: 1px;
 		border-color: grey;
-		height:200px;
-		width:200px;
+		height:253px;
+		width:450px;
 		margin:50px 50px;
 		border-radius: 10px;
-		float:left;
+		display:inline-block;
+	}
+	.learn iframe{
+	height:253px;
+		width:450px;
+
 	}
 
 
